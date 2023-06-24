@@ -2,3 +2,118 @@ baseURL = 'http://mrsoftware.dev/'
 languageCode = 'en-us'
 title = 'Mohammad Rajabloo - Mr Software'
 theme = "PaperMod"
+
+paginate= 5
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+googleAnalytics = "G-E3VBSFEE3C"
+pygmentsUseClasses = true
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "Mohammad Rajabloo - Mr Software"
+description = "Mohammad Rajabloo Personal website"
+keywords = [ "Blog", "Portfolio", "PaperMod" ]
+author = "Me"
+images = [ "<link or path of image for opengraph, twitter-cards>" ]
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = true
+tocopen = true
+ShowFullTextinRSS = true
+
+
+  [params.assets]
+  favicon = "/favicon.ico"
+  favicon16x16 = "/favicon.ico"
+
+  [params.label]
+  text = "Home"
+
+  [params.profileMode]
+  enabled = false
+
+
+  [params.homeInfoParams]
+  Title = "Hi there 👋"
+  Content = "This is **Mohammad Rajabloo** , a motivated and creative Senior Software Engineer. As a lifelong learner, I always try hard to improve my skills. I'm a back-end developer and interested in distributed systems, system programming, and front-end development. I spend my free time with my family and contribute to open source. I like teamwork and I enjoy sharing my knowledge with others."
+
+  [[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/mrsoftwaredev"
+
+  [[params.socialIcons]]
+  name = "stackoverflow"
+  url = "https://stackoverflow.com/users/3258514/mohammad-rajabloo"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/mrsoftware"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/mrsoftware"
+
+  [[params.socialIcons]]
+  name = "instagram"
+  url = "https://www.instagram.com/mrsoftware.dev"  
+
+  [params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+  [params.editPost]
+  URL = "https://github.com/mrsoftware.dev/content"
+  Text = "Suggest Changes"
+  appendFilePath = true
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = [ "title", "permalink", "summary", "content" ]
+
+[[menu.main]]
+identifier = "categories"
+name = "categories"
+url = "/categories/"
+weight = 10
+
+[[menu.main]]
+identifier = "tags"
+name = "tags"
+url = "/tags/"
+weight = 20
+
+[[menu.main]]
+identifier = "mrsoftware.dev"
+name = "example.org"
+url = "https://example.org"
+weight = 30
+
+[markup.highlight]
+noClasses = false
