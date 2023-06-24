@@ -1,4 +1,4 @@
-baseURL = 'http://mrsoftware.dev/'
+baseURL = 'https://mrsoftware.dev/'
 languageCode = 'en-us'
 title = 'Mohammad Rajabloo - Mr Software'
 theme = "PaperMod"
@@ -109,11 +109,6 @@ name = "tags"
 url = "/tags/"
 weight = 20
 
-[[menu.main]]
-identifier = "mrsoftware.dev"
-name = "example.org"
-url = "https://example.org"
-weight = 30
 
 [markup.highlight]
 noClasses = false
